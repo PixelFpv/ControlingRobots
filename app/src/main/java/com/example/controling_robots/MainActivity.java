@@ -4,25 +4,14 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.view.LayoutInflater;
 import android.view.View;
 
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import com.example.controling_robots.databinding.ActivityMainBinding;
 
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -170,17 +159,16 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        enter.setOnLongClickListener(new View.OnLongClickListener() {
+        enter.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onLongClick(View view) {
-                
+            public void onClick(View view) {
+
                 CharSequence s = editText.getText();
                 // Split the string at the ":" character to get the ip and port values
                 String[] values = s.toString().split(":");
                 if (values.length != 2) {
                     // Throw an exception if the string is not in the correct format
 //                    throw new Exception("Invalid IP and port format. Expected format: ip:port");
-                    return false;
                 }
 
                 // Assign the values to the appropriate variables
@@ -190,7 +178,6 @@ public class MainActivity extends AppCompatActivity {
                 }catch(Exception e){
 
                 }
-                return false;
             }
         });
 

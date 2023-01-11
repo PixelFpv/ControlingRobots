@@ -12,49 +12,24 @@
 
         <Button
             android:id="@+id/b_forward"
+            style="@style/ButtonColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="↑"
-            style="@style/ButtonColor"
             app:layout_constraintBottom_toTopOf="@+id/b_back"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/b_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="220dp"
-            android:text="↓"
-            style="@style/ButtonColor"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/b_right"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="50dp"
-            android:text="→"
-            style="@style/ButtonColor"
-
-            app:layout_constraintBottom_toTopOf="@+id/b_back"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.869"
-            app:layout_constraintStart_toEndOf="@+id/b_forward"
-            app:layout_constraintTop_toBottomOf="@+id/b_forward"
-            app:layout_constraintVertical_bias="0.503" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.581" />
 
         <Button
             android:id="@+id/b_left"
+            style="@style/ButtonColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:text="←"
-            style="@style/ButtonColor"
 
             app:layout_constraintBottom_toTopOf="@+id/b_back"
             app:layout_constraintEnd_toStartOf="@+id/b_forward"
@@ -63,28 +38,57 @@
             app:layout_constraintTop_toBottomOf="@+id/b_forward"
             app:layout_constraintVertical_bias="0.503" />
 
-        <EditText
-            android:id="@+id/edit_text"
+        <Button
+            android:id="@+id/b_right"
+            style="@style/ButtonColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="48dp"
-            android:layout_marginTop="52dp"
-            android:ems="10"
-            android:hint="IP address of your robot"
-            android:inputType="textPersonName"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginEnd="50dp"
+            android:text="→"
+
+            app:layout_constraintBottom_toTopOf="@+id/b_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toEndOf="@+id/b_forward"
+            app:layout_constraintTop_toBottomOf="@+id/b_forward"
+            app:layout_constraintVertical_bias="0.503" />
+
+        <Button
+            android:id="@+id/b_back"
+            style="@style/ButtonColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="140dp"
+            android:text="↓"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/enter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="52dp"
-            android:text="Enter"
             style="@style/ButtonColor"
+            android:layout_width="85dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="132dp"
+            android:text="Enter"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.288"
-            app:layout_constraintStart_toEndOf="@+id/edit_text"
+            app:layout_constraintHorizontal_bias="0.794"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="246dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="68dp"
+            android:ems="10"
+            android:hint="IP address and port 1.1.1.1:80"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

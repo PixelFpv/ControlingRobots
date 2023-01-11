@@ -1,6 +1,7 @@
 package com.example.controling_robots;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
@@ -12,6 +13,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 
 import com.example.controling_robots.databinding.ActivityMainBinding;
 
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -162,6 +164,10 @@ public class MainActivity extends AppCompatActivity {
         enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                editText.clearFocus();
 
                 CharSequence s = editText.getText();
                 // Split the string at the ":" character to get the ip and port values

@@ -4,7 +4,7 @@ What it does:
 It sends UPD package to desired IP containig one of four possible direction (up, down, left, right).
 
 Use case:
-It can be used to controle simple arduino baser robot.
+It can be used to controle simple arduino based robot.
 
 How to use:
 1. Install app on your android phone

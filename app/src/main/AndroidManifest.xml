@@ -10,14 +10,14 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon"
-        android:label="Robot Controll"
+        android:label="Robot Control"
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Controling_robots">
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="Robot Controll"
+            android:label="Robot Control"
             android:theme="@style/Theme.Controling_robots.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

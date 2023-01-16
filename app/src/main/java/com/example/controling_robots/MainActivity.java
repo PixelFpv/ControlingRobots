@@ -173,11 +173,9 @@ public class MainActivity extends AppCompatActivity {
                 // Split the string at the ":" character to get the ip and port values
                 String[] values = s.toString().split(":");
                 if (values.length != 2) {
-                    // Throw an exception if the string is not in the correct format
-//                    throw new Exception("Invalid IP and port format. Expected format: ip:port");
+
                 }
 
-                // Assign the values to the appropriate variables
                 MainActivity.ip = values[0];
                 try{
                     MainActivity.port = Integer.parseInt(values[1]);
@@ -186,41 +184,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-
-
-//        editText.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-//                // Do something before the text changes
-//            }
-//
-//            @Override
-//            public void onTextChanged(CharSequence s, int start, int before, int count) {
-//                // Do something while the text is changing
-//            }
-//
-//            @Override
-//            public void afterTextChanged(Editable s) {
-//                // Split the string at the ":" character to get the ip and port values
-//                String[] values = s.toString().split(":");
-//                if (values.length != 2) {
-//                    // Throw an exception if the string is not in the correct format
-////                    throw new Exception("Invalid IP and port format. Expected format: ip:port");
-//                    return;
-//                }
-//
-//                // Assign the values to the appropriate variables
-//                MainActivity.ip = values[0];
-//                try{
-//                    MainActivity.port = Integer.parseInt(values[1]);
-//                }catch(Exception e){
-//
-//                }
-//            }
-//        });
-
-
     }
 
 
